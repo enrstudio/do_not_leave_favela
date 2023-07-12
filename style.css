@@ -161,9 +161,10 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
 
 .map_main p{
     text-align: center;
+    width: 50%;
     /* width: 40%; */
 }
-.map_main h1, p{
+.map_main h1{
     width: 50%;
 }
 .map_main img{
