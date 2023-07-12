@@ -1,0 +1,291 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    /* height: 100vh;
+    width: 100%; */
+    font-family: 'Caprasimo', cursive;
+    font-size: 3vh;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+    align-self: center;
+    /* text-align: center; */
+
+}
+
+.main{
+    padding: 0 5vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+
+.title{
+    font-size: 6vh;
+    height: 100vh;
+    align-self: flex-start;
+    text-align: start;
+    /* align-items: center; */
+}
+
+.cover{
+    top: 0;
+    right: 0;
+    height: 80vh;
+    padding: 10vh 18vh;
+    z-index: -1;
+    padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 1vh 0;
+    font-family: 'Caprasimo', cursive;
+}
+
+.show{
+    font-size: 3vh;
+    /* align-items: center; */
+}
+
+.wyn{
+    height: auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+  }
+
+.nunito{
+    font-family: 'Noto Emoji', sans-serif;
+    font-size: 6vh;
+}
+
+.ob{
+    min-height: 75vh;
+    align-items: center;
+    text-align: center;
+    /* font-size: large; */
+}
+
+.contratto{
+    width: 100%;
+    margin-top: 20vh;
+    /* margin-bottom: 10vh; */
+}
+
+.baccellona{
+    margin: 5vh 0;
+    font-family: monospace;
+    color: #333333;
+    /* font-weight: 300; */
+    /* min-width: 100%; */
+    width: 90%;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px grey;
+    padding: 5vh;
+}
+
+.fake{
+    padding: 0;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.team{
+    height: auto;
+    width: 10vh;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-bottom: 2.5vh;
+}
+
+
+i{
+    color: lightgrey;
+    font-size: smaller;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    width: 100%;
+    font-family: monospace;
+
+    /* font-family: 'Caprasimo', cursive; */
+    font-weight: bold;
+    font-size: 3vh;
+    height: 10vh;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+  }
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: orangered;
+  }
+
+
+#player{
+    width: 100%;
+    height: 5vh!important;
+    margin: 0;
+    font-size: 3vh;
+    border: none;
+    background-color: white;
+    border: 1px solid white;
+    border-bottom: 1px solid black;
+    outline: white;
+}
+
+.map_main{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.map_main p{
+    text-align: center;
+    /* width: 40%; */
+}
+.map_main h1, p{
+    width: 50%;
+}
+.map_main img{
+    width: 50%;
+    margin-top: 10vh;
+}
+
+
+
+  @media screen and (min-width: 1800px) {
+    .cover{
+        position: fixed;
+        
+    }
+
+    .main{
+        width: 55%;
+    }
+  }
+
+  @media screen and (max-width: 1800px) {
+
+    .main{
+        /* width: 90vw; */
+        padding: 0;
+    }
+
+    .title{
+        background-image: url(./src/img/cover.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 3.5vh;
+        width: 100%;
+        /* min-height: 100%; */
+        margin-bottom: 10vh;
+        /* align-items: center; */
+        /* padding: 5vh; */
+    }
+
+    .title  h1, h5{
+        z-index: 100!important;
+        padding-left: 5vh;
+    }
+    
+    .cover{
+        display: none;
+    }
+
+    .show{
+        font-size: 3vh;
+        text-align: center;
+        padding: 0 5vh;
+    }
+
+    .nunito{
+        font-family: 'Noto Emoji', sans-serif;
+        font-size: 3.5vh;
+    }
+    
+    .ob{
+        height: 60%;
+    }
+
+    .wyn{
+        height: auto;
+        text-align: center;
+        padding: 0 5vh;
+    }
+    
+    .contratto{
+        width: 100%;
+    }
+
+    .contratto h2{
+        padding: 0 5vh;
+        text-align: center;
+    }
+
+    .baccellona{
+        /* max-width: 100%; */
+        padding: 2vh;
+        align-self: center;
+
+    }
+
+    .map_main{
+        width: 100%;
+    }
+
+}
+
+  @media screen and (max-width: 600px) {
+
+    .title  h1, h5{
+        z-index: 100!important;
+        padding-left: 5vh;
+    }
+    
+    .cover{
+        display: none;
+    }
+
+    .show{
+        font-size: 3vh;
+        text-align: center;
+        padding: 0 5vh;
+    }
+
+    .nunito{
+        font-family: 'Noto Emoji', sans-serif;
+        font-size: 3.5vh;
+    }
+    
+    .contratto{
+        width: 90%;
+    }
+
+    .baccellona{
+        /* max-width: 100%; */
+        padding: 2vh;
+        align-self: center;
+
+    }
+
+}
